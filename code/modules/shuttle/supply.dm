@@ -96,7 +96,7 @@
 	if(z != level_name_to_num(CENTCOMM))		//we only sell when we are -at- centcomm
 		return 1
 
-	var/plasma_count = 0
+	var/gold_count = 0
 	var/intel_count = 0
 	var/crate_count = 0
 
@@ -158,10 +158,10 @@
 						find_slip = 0
 					continue
 
-				// Sell plasma
-				if(istype(thing, /obj/item/stack/sheet/mineral/plasma))
-					var/obj/item/stack/sheet/mineral/plasma/P = thing
-					plasma_count += P.amount
+				// Sell gold
+				if(istype(thing, /obj/item/stack/sheet/mineral/gold))
+					var/obj/item/stack/sheet/mineral/gold/G = thing
+					gold_count += G.amount
 
 				// Sell syndicate intel
 				if(istype(thing, /obj/item/documents/syndicate))
