@@ -297,9 +297,8 @@
 				else
 					on = 0
 				continue
-			//THESE TWO ARE CODED FOR URIST TO USE WHEN HE GETS AROUND TO IT.
-			//They were coded on 18 Feb 2012. If you're reading this in 2015, then firstly congratulations on the world not ending on 21 Dec 2012 and secondly, Urist is apparently VERY lazy. ~Errorage
-			/*if(selected_glass == 0 && selected_gold == 0 && selected_silver == 0 && selected_diamond == 1 && selected_plasma == 0 && selected_uranium == 1 && selected_iron == 0 && selected_clown == 0 && selected_mime == 0)
+
+			if(selected_glass == 0 && selected_gold == 0 && selected_silver == 0 && selected_diamond == 1 && selected_plasma == 0 && selected_uranium == 1 && selected_iron == 0 && selected_clown == 0 && selected_mime == 0)
 				if(ore_uranium >= 2 && ore_diamond >= 1)
 					ore_uranium -= 2
 					ore_diamond -= 1
@@ -314,7 +313,7 @@
 					generate_mineral(/obj/item/stack/sheet/mineral/mythril)
 				else
 					on = 0
-				continue*/
+				continue
 
 
 			//if a non valid combination is selected
